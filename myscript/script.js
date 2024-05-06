@@ -1,4 +1,4 @@
-
+const content = document.getElementById("contenuto")
 
 const team = [
     {
@@ -36,7 +36,8 @@ const team = [
 
 for (let i = 0; i < team.length; i++) {
     const membro = team[i];
-    console.log(membro.nome)
-    console.log(membro.cognome)
-    console.log(membro.immagine)
+    content.innerHTML = content.innerHTML + `<div>${membro.nome}</div>`
+    content.innerHTML = content.innerHTML + `<div>${membro.ruolo}</div>`
+    content.innerHTML = content.innerHTML + `<img src="${membro.immagine}"></img>`
+
 }
