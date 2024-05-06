@@ -1,0 +1,15 @@
+#contenuto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.card {
+    text-align: center;
+}
+
+img {
+    width: 15rem;
+}

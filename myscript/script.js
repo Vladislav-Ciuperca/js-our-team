@@ -36,8 +36,15 @@ const team = [
 
 for (let i = 0; i < team.length; i++) {
     const membro = team[i];
-    content.innerHTML = content.innerHTML + `<div>${membro.nome}</div>`
-    content.innerHTML = content.innerHTML + `<div>${membro.ruolo}</div>`
-    content.innerHTML = content.innerHTML + `<img src="${membro.immagine}"></img>`
+    console.log(membro.nome)
+    console.log(membro.ruolo)
+    content.innerHTML = content.innerHTML + `
+    <div class="card">
+        <div id="ruolo">${membro.ruolo}</div>
+        <div id="nome">${membro.nome}</div>
+        <img src="${membro.immagine}"></img>
+    </div>
+    `
+
 
 }
